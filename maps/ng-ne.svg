@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:namespace="http://www.highcharts.com/svg/namespace"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   height="700pt"
+   width="700pt"
+   id="svg3448"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ng-ne.svg">
+  <metadata
+     id="metadata3499">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3497" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1297"
+     inkscape:window-height="744"
+     id="namedview3495"
+     showgrid="false"
+     inkscape:zoom="1.0788571"
+     inkscape:cx="437.5"
+     inkscape:cy="593.31078"
+     inkscape:window-x="69"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="admin1" />
+  <desc
+     id="desc3450">
+Map version: 1.1.2
+Copyright (c) 2015 Highsoft AS, Based on data from Natural Earth
+</desc>
+  <title
+     id="title3452">Nigeria</title>
+  <g
+     id="admin1">
+    <g
+       id="NG">
+      <namespace:desc>
+        <namespace:name>Nigeria</namespace:name>
+        <namespace:labelrank>2</namespace:labelrank>
+        <namespace:country-abbrev>Nigeria</namespace:country-abbrev>
+        <namespace:subregion>Western Africa</namespace:subregion>
+        <namespace:region-wb>Sub-Saharan Africa</namespace:region-wb>
+        <namespace:iso-a3>NGA</namespace:iso-a3>
+        <namespace:iso-a2>NG</namespace:iso-a2>
+        <namespace:woe-id>23424908</namespace:woe-id>
+        <namespace:continent>Africa</namespace:continent>
+        <namespace:hc-key>ng</namespace:hc-key>
+        <namespace:hc-a2>NI</namespace:hc-a2>
+      </namespace:desc>
+    </g>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.YO"
+       d="M408.6,62.2 L418.4,50.5 L422.6,47.7 L424.8,43.6 L438.1,36.4 L467.6,29.8 L473.2,29.3 L483.6,30.4 L511.7,30.0 L529.2,34.2 L535.6,36.7 L547.6,44.1 L551.0,44.9 L555.8,43.5 L563.1,46.1 L566.6,46.1 L565.4,57.5 L566.5,61.2 L572.2,66.3 L572.8,69.9 L568.9,77.1 L562.6,83.2 L563.9,92.0 L561.5,111.9 L562.7,120.4 L559.0,129.6 L564.9,130.5 L568.0,136.7 L562.2,144.0 L557.1,152.0 L557.2,161.9 L555.5,166.0 L551.9,168.8 L538.2,173.7 L535.0,177.4 L534.0,189.1 L528.7,193.0 L522.4,192.9 L521.4,186.9 L522.0,173.4 L520.4,169.8 L508.1,156.6 L504.4,153.7 L496.3,149.9 L488.3,152.1 L483.9,149.7 L485.9,140.6 L485.5,135.6 L478.4,118.5 L476.5,109.1 L476.1,102.5 L473.7,98.3 L471.6,87.0 L464.3,81.2 L461.9,69.1 L458.5,64.1 L450.4,62.6 L444.1,63.4 L442.0,56.0 L438.0,53.1 L427.2,56.7 L422.2,59.2 L420.7,62.2 L415.6,64.4 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.YO</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346372</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI44</namespace:fips>
+        <namespace:postal-code>YO</namespace:postal-code>
+        <namespace:name>Yobe</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>11.5881</namespace:longitude>
+        <namespace:woe-name>Yobe</namespace:woe-name>
+        <namespace:latitude>12.3156</namespace:latitude>
+        <namespace:woe-label>Yobe, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.69</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.52</namespace:hc-middle-y>
+        <namespace:hc-key>ng-yo</namespace:hc-key>
+        <namespace:hc-a2>YO</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.AD"
+       d="M647.8,170.8 L637.4,186.5 L633.8,197.4 L630.2,217.7 L625.9,220.9 L619.3,222.2 L619.3,228.5 L617.5,234.6 L620.5,238.6 L618.3,249.7 L616.7,253.9 L604.3,258.1 L597.3,263.6 L599.6,268.3 L599.0,272.8 L595.2,280.5 L595.6,285.0 L594.4,296.1 L592.5,300.4 L589.4,300.6 L586.0,306.4 L580.0,309.6 L575.6,308.6 L568.9,309.5 L571.0,316.1 L567.5,319.9 L562.1,320.8 L560.7,322.7 L561.4,332.7 L558.6,338.6 L559.2,347.0 L550.9,358.3 L548.3,364.7 L549.3,369.4 L542.2,377.9 L539.9,371.7 L539.1,363.9 L536.2,357.1 L529.0,350.0 L525.1,350.0 L521.1,354.7 L519.2,354.6 L515.2,348.7 L512.6,342.5 L513.1,340.6 L520.1,333.4 L535.1,315.1 L539.0,311.9 L539.7,303.7 L545.4,291.5 L545.0,287.4 L538.9,282.7 L536.8,279.3 L537.0,275.2 L533.3,267.4 L529.9,264.4 L524.5,262.2 L519.0,252.1 L524.4,251.2 L529.3,248.9 L540.1,242.4 L543.1,238.1 L543.3,225.2 L552.7,225.6 L560.1,220.3 L566.0,212.4 L569.3,209.6 L578.2,208.0 L582.4,206.1 L585.1,202.1 L588.7,200.9 L595.2,194.0 L599.9,192.9 L609.0,195.1 L615.7,200.1 L619.7,200.9 L622.6,199.2 L624.6,191.3 L627.7,183.3 L628.7,171.8 L636.0,173.1 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.AD</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346363</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI35</namespace:fips>
+        <namespace:postal-code>AD</namespace:postal-code>
+        <namespace:name>Adamawa</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>12.5768</namespace:longitude>
+        <namespace:woe-name>Adamawa</namespace:woe-name>
+        <namespace:latitude>9.479060000000001</namespace:latitude>
+        <namespace:woe-label>Adamawa, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.44</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.38</namespace:hc-middle-y>
+        <namespace:hc-key>ng-ad</namespace:hc-key>
+        <namespace:hc-a2>AD</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.BO"
+       d="M647.8,170.8 L636.0,173.1 L628.7,171.8 L627.7,183.3 L624.6,191.3 L622.6,199.2 L619.7,200.9 L615.7,200.1 L609.0,195.1 L599.9,192.9 L595.2,194.0 L588.7,200.9 L585.1,202.1 L582.4,206.1 L578.2,208.0 L569.3,209.6 L566.0,212.4 L560.1,220.3 L552.7,225.6 L543.3,225.2 L539.1,222.6 L535.1,216.4 L528.2,212.5 L525.1,207.7 L525.2,205.1 L529.4,198.1 L528.7,193.0 L534.0,189.1 L535.0,177.4 L538.2,173.7 L551.9,168.8 L555.5,166.0 L557.2,161.9 L557.1,152.0 L562.2,144.0 L568.0,136.7 L564.9,130.5 L559.0,129.6 L562.7,120.4 L561.5,111.9 L563.9,92.0 L562.6,83.2 L568.9,77.1 L572.8,69.9 L572.2,66.3 L566.5,61.2 L565.4,57.5 L566.6,46.1 L571.6,46.9 L575.1,42.0 L576.5,36.2 L585.9,31.4 L594.1,23.1 L592.5,21.4 L598.1,21.0 L603.2,18.3 L614.7,17.5 L616.8,12.2 L622.1,7.6 L636.4,7.9 L663.7,44.3 L670.9,75.6 L671.2,85.1 L673.5,86.6 L685.4,86.7 L690.7,88.3 L692.8,93.1 L696.9,96.7 L700.0,97.3 L696.4,105.5 L697.6,112.2 L695.9,120.2 L693.4,124.0 L697.9,129.2 L696.4,137.1 L687.9,142.3 L683.4,144.1 L678.3,149.0 L671.8,152.9 L661.0,150.8 L654.8,157.4 L651.8,163.2 L648.1,166.4 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.BO</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346355</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI27</namespace:fips>
+        <namespace:postal-code>BO</namespace:postal-code>
+        <namespace:name>Borno</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>13.1533</namespace:longitude>
+        <namespace:woe-name>Borno</namespace:woe-name>
+        <namespace:latitude>12.0019</namespace:latitude>
+        <namespace:woe-label>Borno, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.55</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.43</namespace:hc-middle-y>
+        <namespace:hc-key>ng-bo</namespace:hc-key>
+        <namespace:hc-a2>BO</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.TA"
+       d="M409.6,433.4 L411.0,427.7 L411.5,414.0 L413.4,403.8 L417.5,397.4 L423.0,392.9 L423.4,386.0 L425.7,378.9 L423.1,372.1 L417.1,366.8 L411.8,360.3 L405.1,355.7 L396.2,354.7 L387.2,355.0 L379.0,357.6 L378.3,356.3 L381.6,351.5 L393.3,343.0 L392.5,336.4 L389.4,332.5 L391.2,327.8 L403.7,329.8 L407.6,325.8 L415.2,325.6 L419.5,324.4 L426.6,318.1 L434.7,313.0 L443.5,302.4 L457.0,299.0 L466.2,294.4 L468.2,290.6 L467.8,281.1 L464.6,272.2 L464.3,264.0 L462.6,258.1 L465.8,256.1 L473.2,255.8 L480.3,252.4 L484.2,251.7 L492.3,252.6 L498.5,253.1 L519.0,252.1 L524.5,262.2 L529.9,264.4 L533.3,267.4 L537.0,275.2 L536.8,279.3 L538.9,282.7 L545.0,287.4 L545.4,291.5 L539.7,303.7 L539.0,311.9 L535.1,315.1 L520.1,333.4 L513.1,340.6 L512.6,342.5 L515.2,348.7 L519.2,354.6 L521.1,354.7 L525.1,350.0 L529.0,350.0 L536.2,357.1 L539.1,363.9 L539.9,371.7 L542.2,377.9 L532.5,389.1 L535.0,390.4 L541.0,398.6 L536.8,400.4 L532.8,404.8 L529.7,405.4 L522.3,412.0 L521.0,415.1 L522.9,418.5 L519.4,427.6 L513.9,430.0 L512.3,435.8 L508.2,437.9 L497.7,438.4 L495.1,437.3 L492.9,430.0 L492.6,422.5 L489.5,418.6 L484.0,417.6 L482.1,415.8 L479.4,408.2 L465.9,401.6 L464.4,397.3 L462.1,407.9 L459.6,412.4 L444.5,412.7 L441.0,410.1 L440.2,405.8 L437.5,405.5 L423.1,417.7 L417.0,418.5 L412.5,432.8 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.TA</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346371</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI43</namespace:fips>
+        <namespace:postal-code>TA</namespace:postal-code>
+        <namespace:name>Taraba</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>10.5428</namespace:longitude>
+        <namespace:woe-name>Taraba</namespace:woe-name>
+        <namespace:latitude>7.93608</namespace:latitude>
+        <namespace:woe-label>Taraba, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.62</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.56</namespace:hc-middle-y>
+        <namespace:hc-key>ng-ta</namespace:hc-key>
+        <namespace:hc-a2>TA</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.BA"
+       d="M492.3,252.6 L484.2,251.7 L480.3,252.4 L473.2,255.8 L465.8,256.1 L462.6,258.1 L451.0,251.4 L422.4,238.3 L418.9,240.6 L422.0,245.9 L421.5,247.8 L416.2,250.6 L414.4,254.2 L410.1,255.5 L400.8,256.1 L389.0,253.4 L384.3,246.8 L380.8,244.8 L383.3,237.9 L381.8,229.1 L378.1,227.7 L371.3,228.9 L369.2,227.5 L369.2,218.1 L367.8,212.0 L365.7,209.4 L358.9,209.1 L353.8,204.0 L356.4,196.6 L360.7,189.8 L360.2,185.8 L355.9,178.1 L356.1,168.8 L357.9,165.1 L363.4,163.9 L373.2,152.6 L378.9,151.9 L384.4,149.9 L387.9,149.9 L395.0,152.4 L402.3,152.0 L407.6,156.0 L418.4,154.5 L422.3,160.4 L421.8,168.0 L423.2,171.2 L426.5,172.6 L435.7,171.9 L440.0,173.7 L442.1,166.6 L448.5,164.1 L452.1,159.3 L433.7,156.1 L429.4,154.4 L421.4,142.8 L418.5,143.1 L417.6,139.6 L419.5,136.0 L418.5,129.8 L415.6,127.4 L410.0,128.7 L407.5,127.0 L408.7,122.7 L411.8,119.8 L416.7,119.4 L420.5,117.3 L438.2,110.5 L438.9,104.1 L444.4,87.2 L451.8,84.5 L456.7,86.3 L464.3,81.2 L471.6,87.0 L473.7,98.3 L476.1,102.5 L476.5,109.1 L478.4,118.5 L485.5,135.6 L485.9,140.6 L483.9,149.7 L488.3,152.1 L484.8,155.8 L479.4,159.0 L474.7,164.3 L468.6,167.2 L464.1,180.7 L460.9,186.6 L467.2,189.3 L469.7,197.9 L477.6,202.2 L478.8,205.7 L478.9,217.4 L472.3,220.8 L474.4,226.1 L486.5,234.9 L488.3,238.8 L489.6,246.2 Z">
+      <namespace:desc>
+        <namespace:labelrank>7</namespace:labelrank>
+        <namespace:hasc>NG.BA</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346343</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI46</namespace:fips>
+        <namespace:postal-code>BA</namespace:postal-code>
+        <namespace:name>Bauchi</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>9.88584</namespace:longitude>
+        <namespace:woe-name>Bauchi</namespace:woe-name>
+        <namespace:latitude>10.4101</namespace:latitude>
+        <namespace:woe-label>Bauchi, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.53</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.72</namespace:hc-middle-y>
+        <namespace:hc-key>ng-ba</namespace:hc-key>
+        <namespace:hc-a2>BA</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.GO"
+       d="M519.0,252.1 L498.5,253.1 L492.3,252.6 L489.6,246.2 L488.3,238.8 L486.5,234.9 L474.4,226.1 L472.3,220.8 L478.9,217.4 L478.8,205.7 L477.6,202.2 L469.7,197.9 L467.2,189.3 L460.9,186.6 L464.1,180.7 L468.6,167.2 L474.7,164.3 L479.4,159.0 L484.8,155.8 L488.3,152.1 L496.3,149.9 L504.4,153.7 L508.1,156.6 L520.4,169.8 L522.0,173.4 L521.4,186.9 L522.4,192.9 L528.7,193.0 L529.4,198.1 L525.2,205.1 L525.1,207.7 L528.2,212.5 L535.1,216.4 L539.1,222.6 L543.3,225.2 L543.1,238.1 L540.1,242.4 L529.3,248.9 L524.4,251.2 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.GO</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>20070155</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI55</namespace:fips>
+        <namespace:postal-code>GO</namespace:postal-code>
+        <namespace:name>Gombe</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>North-East</namespace:region>
+        <namespace:longitude>11.2421</namespace:longitude>
+        <namespace:woe-name>Gombe</namespace:woe-name>
+        <namespace:latitude>10.4342</namespace:latitude>
+        <namespace:woe-label>Gombe, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.50</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.46</namespace:hc-middle-y>
+        <namespace:hc-key>ng-go</namespace:hc-key>
+        <namespace:hc-a2>GO</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+  </g>
+  <text
+     x="350"
+     y="714"
+     text-anchor="middle"
+     font-family="Verdana"
+     font-size="8"
+     stroke-opacity="0.6"
+     id="text3493">Copyright (c) 2015 Highsoft AS, Based on data from Natural Earth</text>
+</svg>

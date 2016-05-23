@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:namespace="http://www.highcharts.com/svg/namespace"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   height="700pt"
+   width="700pt"
+   id="svg3872"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ng-se.svg">
+  <metadata
+     id="metadata3923">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3921" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1297"
+     inkscape:window-height="744"
+     id="namedview3919"
+     showgrid="false"
+     inkscape:zoom="1.0788571"
+     inkscape:cx="437.5"
+     inkscape:cy="585.80508"
+     inkscape:window-x="69"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="admin1" />
+  <desc
+     id="desc3874">
+Map version: 1.1.2
+Copyright (c) 2015 Highsoft AS, Based on data from Natural Earth
+</desc>
+  <title
+     id="title3876">Nigeria</title>
+  <g
+     id="admin1">
+    <g
+       id="NG">
+      <namespace:desc>
+        <namespace:name>Nigeria</namespace:name>
+        <namespace:labelrank>2</namespace:labelrank>
+        <namespace:country-abbrev>Nigeria</namespace:country-abbrev>
+        <namespace:subregion>Western Africa</namespace:subregion>
+        <namespace:region-wb>Sub-Saharan Africa</namespace:region-wb>
+        <namespace:iso-a3>NGA</namespace:iso-a3>
+        <namespace:iso-a2>NG</namespace:iso-a2>
+        <namespace:woe-id>23424908</namespace:woe-id>
+        <namespace:continent>Africa</namespace:continent>
+        <namespace:hc-key>ng</namespace:hc-key>
+        <namespace:hc-a2>NI</namespace:hc-a2>
+      </namespace:desc>
+    </g>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.AB"
+       d="M306.8,501.4 L300.4,497.2 L295.5,492.1 L291.7,492.8 L292.0,496.9 L290.5,500.9 L292.2,503.5 L284.9,504.9 L285.5,508.3 L284.4,519.9 L281.1,523.9 L283.1,533.6 L279.2,531.0 L273.8,530.0 L266.6,531.0 L264.2,530.3 L263.5,525.7 L269.6,516.4 L268.7,511.4 L273.0,499.0 L277.8,490.9 L276.5,483.4 L277.6,479.9 L276.8,473.3 L268.7,468.4 L271.5,464.9 L275.4,462.8 L281.6,462.7 L285.4,465.6 L285.0,472.9 L288.5,474.6 L297.0,474.7 L300.2,476.2 L301.6,480.1 L305.7,482.3 L307.5,494.5 L310.3,499.9 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.AB</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346362</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI45</namespace:fips>
+        <namespace:postal-code>AB</namespace:postal-code>
+        <namespace:name>Abia</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>South-East</namespace:region>
+        <namespace:longitude>7.56019</namespace:longitude>
+        <namespace:woe-name>Abia</namespace:woe-name>
+        <namespace:latitude>5.57402</namespace:latitude>
+        <namespace:woe-label>Abia, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.56</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.30</namespace:hc-middle-y>
+        <namespace:hc-key>ng-ab</namespace:hc-key>
+        <namespace:hc-a2>AB</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.IM"
+       d="M268.7,468.4 L276.8,473.3 L277.6,479.9 L276.5,483.4 L277.8,490.9 L273.0,499.0 L268.7,511.4 L254.5,511.9 L246.2,511.3 L237.6,504.8 L238.9,496.7 L236.5,494.2 L231.9,493.2 L234.4,481.9 L238.4,478.8 L243.0,477.5 L247.8,478.0 L250.9,470.8 L258.5,468.5 L263.8,469.7 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.IM</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346356</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI28</namespace:fips>
+        <namespace:postal-code>IM</namespace:postal-code>
+        <namespace:name>Imo</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>South-East</namespace:region>
+        <namespace:longitude>7.01557</namespace:longitude>
+        <namespace:woe-name>Imo</namespace:woe-name>
+        <namespace:latitude>5.55004</namespace:latitude>
+        <namespace:woe-label>Imo, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.50</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.50</namespace:hc-middle-y>
+        <namespace:hc-key>ng-im</namespace:hc-key>
+        <namespace:hc-a2>IM</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.AN"
+       d="M275.4,462.8 L271.5,464.9 L268.7,468.4 L263.8,469.7 L258.5,468.5 L250.9,470.8 L247.8,478.0 L243.0,477.5 L238.4,478.8 L234.4,481.9 L232.5,481.8 L230.7,480.2 L231.9,474.6 L235.4,469.5 L236.6,459.5 L239.1,458.0 L239.9,454.1 L238.5,450.2 L235.3,436.0 L235.1,432.4 L239.9,432.5 L241.9,430.6 L244.6,422.1 L248.6,418.3 L249.0,421.9 L252.9,422.1 L260.0,424.7 L259.7,428.7 L256.5,432.2 L255.4,438.1 L259.1,439.4 L262.6,446.4 L261.5,450.0 L263.8,449.9 L269.6,461.6 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.AN</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346353</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI25</namespace:fips>
+        <namespace:postal-code>AN</namespace:postal-code>
+        <namespace:name>Anambra</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>South-East</namespace:region>
+        <namespace:longitude>6.98472</namespace:longitude>
+        <namespace:woe-name>Anambra</namespace:woe-name>
+        <namespace:latitude>6.30827</namespace:latitude>
+        <namespace:woe-label>Anambra, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.48</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.50</namespace:hc-middle-y>
+        <namespace:hc-key>ng-an</namespace:hc-key>
+        <namespace:hc-a2>AN</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.EN"
+       d="M283.2,400.9 L286.0,407.9 L291.8,413.4 L296.4,414.2 L300.3,412.3 L304.2,415.8 L304.8,421.5 L302.8,427.0 L295.0,428.4 L297.3,435.9 L297.3,440.1 L294.7,447.9 L297.1,458.1 L294.5,461.5 L294.8,467.5 L293.2,468.3 L288.3,464.7 L285.4,465.6 L281.6,462.7 L275.4,462.8 L269.6,461.6 L263.8,449.9 L261.5,450.0 L262.6,446.4 L259.1,439.4 L255.4,438.1 L256.5,432.2 L259.7,428.7 L260.0,424.7 L252.9,422.1 L249.0,421.9 L248.6,418.3 L252.1,414.0 L255.4,418.2 L260.2,413.5 L268.0,407.4 L271.4,403.1 L278.4,398.9 Z">
+      <namespace:desc>
+        <namespace:labelrank>7</namespace:labelrank>
+        <namespace:hasc>NG.EN</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>2346366</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI47</namespace:fips>
+        <namespace:postal-code>EN</namespace:postal-code>
+        <namespace:name>Enugu</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>South-East</namespace:region>
+        <namespace:longitude>7.38408</namespace:longitude>
+        <namespace:woe-name>Enugu</namespace:woe-name>
+        <namespace:latitude>6.55396</namespace:latitude>
+        <namespace:woe-label>Enugu, NG, Nigeria</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.55</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.48</namespace:hc-middle-y>
+        <namespace:hc-key>ng-en</namespace:hc-key>
+        <namespace:hc-a2>EN</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+    <path
+       fill="#CEE3F5"
+       stroke="#6E6E6E"
+       stroke-width="0.4"
+       id="NG.EB"
+       d="M330.1,424.4 L330.9,427.6 L336.4,433.7 L338.7,440.5 L335.1,442.6 L335.2,450.3 L329.5,457.1 L327.4,463.1 L324.1,462.3 L322.4,464.7 L317.1,467.1 L316.0,464.4 L311.4,464.5 L310.9,470.5 L308.0,474.4 L308.1,477.2 L305.7,482.3 L301.6,480.1 L300.2,476.2 L297.0,474.7 L288.5,474.6 L285.0,472.9 L285.4,465.6 L288.3,464.7 L293.2,468.3 L294.8,467.5 L294.5,461.5 L297.1,458.1 L294.7,447.9 L297.3,440.1 L297.3,435.9 L295.0,428.4 L302.8,427.0 L304.7,431.1 L308.7,433.6 L311.3,430.1 L312.8,423.2 L319.9,422.3 L322.1,419.4 L327.5,418.6 Z">
+      <namespace:desc>
+        <namespace:labelrank>3</namespace:labelrank>
+        <namespace:hasc>NG.EB</namespace:hasc>
+        <namespace:alt-name>NULL</namespace:alt-name>
+        <namespace:woe-id>20070153</namespace:woe-id>
+        <namespace:subregion>NULL</namespace:subregion>
+        <namespace:fips>NI53</namespace:fips>
+        <namespace:postal-code>EB</namespace:postal-code>
+        <namespace:name>Ebonyi</namespace:name>
+        <namespace:country>Nigeria</namespace:country>
+        <namespace:type-en>State</namespace:type-en>
+        <namespace:region>South-East</namespace:region>
+        <namespace:longitude>7.98254</namespace:longitude>
+        <namespace:woe-name>Ebonyi</namespace:woe-name>
+        <namespace:latitude>6.32648</namespace:latitude>
+        <namespace:woe-label>NULL</namespace:woe-label>
+        <namespace:type>State</namespace:type>
+        <namespace:hc-middle-x>0.59</namespace:hc-middle-x>
+        <namespace:hc-middle-y>0.42</namespace:hc-middle-y>
+        <namespace:hc-key>ng-eb</namespace:hc-key>
+        <namespace:hc-a2>EB</namespace:hc-a2>
+      </namespace:desc>
+    </path>
+  </g>
+  <text
+     x="350"
+     y="714"
+     text-anchor="middle"
+     font-family="Verdana"
+     font-size="8"
+     stroke-opacity="0.6"
+     id="text3917">Copyright (c) 2015 Highsoft AS, Based on data from Natural Earth</text>
+</svg>
