@@ -9,28 +9,28 @@ require 'ap'
 
 # The Nigerian Poverty Profile visualizer
 class NigeriaPovertyProfile < Sinatra::Base
-  ng_re = File.open('./maps/ng-re.json')
+  ng_re = File.open('./data/maps/ng-re.json')
   ng_re = JSON.load ng_re
   ng_re = ng_re.to_json
-  ng_nc = File.open('./maps/ng-nc.json')
+  ng_nc = File.open('./data/maps/ng-nc.json')
   ng_nc = JSON.load ng_nc
   ng_nc = ng_nc.to_json
-  ng_ne = File.open('./maps/ng-ne.json')
+  ng_ne = File.open('./data/maps/ng-ne.json')
   ng_ne = JSON.load ng_ne
   ng_ne = ng_ne.to_json
-  ng_nw = File.open('./maps/ng-nw.json')
+  ng_nw = File.open('./data/maps/ng-nw.json')
   ng_nw = JSON.load ng_nw
   ng_nw = ng_nw.to_json
-  ng_se = File.open('./maps/ng-se.json')
+  ng_se = File.open('./data/maps/ng-se.json')
   ng_se = JSON.load ng_se
   ng_se = ng_se.to_json
-  ng_ss = File.open('./maps/ng-ss.json')
+  ng_ss = File.open('./data/maps/ng-ss.json')
   ng_ss = JSON.load ng_ss
   ng_ss = ng_ss.to_json
-  ng_sw = File.open('./maps/ng-sw.json')
+  ng_sw = File.open('./data/maps/ng-sw.json')
   ng_sw = JSON.load ng_sw
   ng_sw = ng_sw.to_json
-  ng_all = File.open('./maps/ng-all.json')
+  ng_all = File.open('./data/maps/ng-all.json')
   ng_all = JSON.load ng_all
   ng_all = ng_all.to_json
 
