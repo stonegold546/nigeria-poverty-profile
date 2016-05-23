@@ -1,0 +1,878 @@
+div class='row' style='height:550px'
+  div class='col-md-2'
+  div class='col-md-8'
+    ul class='nav nav-tabs'
+      li class='active'
+        a data-toggle='tab' href='#food-state' State-by-state
+      li
+        a data-toggle='tab' href='#food-region' Geopolitical zones with state-by-state drilldowns
+
+      div class='tab-content'
+        div id='food-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
+        div id='food-region' class='tab-pane fade'
+  div class='col-md-2'
+
+div class='row' style='height:550px'
+  div class='col-md-2'
+  div class='col-md-8'
+    ul class='nav nav-tabs'
+      li class='active'
+        a data-toggle='tab' href='#absolute-state' State-by-state
+      li
+        a data-toggle='tab' href='#absolute-region' Geopolitical zones with state-by-state drilldowns
+
+      div class='tab-content'
+        div id='absolute-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
+        div id="absolute-region" class='tab-pane fade'
+
+  div class='col-md-2'
+  
+div class='row' style='height:550px'
+  div class='col-md-2'
+  div class='col-md-8'
+    ul class='nav nav-tabs'
+      li class='active'
+        a data-toggle='tab' href='#relative-state' State-by-state
+      li
+        a data-toggle='tab' href='#relative-region' Geopolitical zones with state-by-state drilldowns
+
+      div class='tab-content'
+        div id='relative-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
+        div id="relative-region" class='tab-pane fade'
+  
+  div class='col-md-2'
+
+div class='row' style='height:550px'
+  div class='col-md-2'
+  div class='col-md-8'
+    ul class='nav nav-tabs'
+      li class='active'
+        a data-toggle='tab' href='#dollar-state' State-by-state
+      li
+        a data-toggle='tab' href='#dollar-region' Geopolitical zones with state-by-state drilldowns
+
+      div class='tab-content'
+        div id='dollar-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
+        div id="dollar-region" class='tab-pane fade'
+
+  div class='col-md-2'
+
+
+javascript:
+  var food_poverty_by_region = JSON.parse("#{food_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      food_poverty_by_state = JSON.parse("#{food_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      absolute_poverty_by_region = JSON.parse("#{absolute_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      absolute_poverty_by_state = JSON.parse("#{absolute_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      relative_poverty_by_region = JSON.parse("#{relative_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      relative_poverty_by_state = JSON.parse("#{relative_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      dollar_poverty_by_region = JSON.parse("#{dollar_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      dollar_poverty_by_state = JSON.parse("#{dollar_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_re = JSON.parse("#{ng_re}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_se = JSON.parse("#{ng_se}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_ss = JSON.parse("#{ng_ss}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_sw = JSON.parse("#{ng_sw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_nw = JSON.parse("#{ng_nw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_ne = JSON.parse("#{ng_ne}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_nc = JSON.parse("#{ng_nc}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      ng_all = JSON.parse("#{ng_all}".replace(/&quot;/g, '"').replace(/amp;/g, ''));
+      
+  $(function () {
+  
+      // Set drilldown pointers
+      $.each(ng_re, function (i) {
+          this.drilldown = this.code;
+      });
+
+      $('#food-state').highcharts('Map', {
+        title : {
+              text : 'Food Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 10,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : food_poverty_by_state,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.code}'
+              },
+              mapData: ng_all,
+              name: 'NG',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+      });
+
+      $('#absolute-state').highcharts('Map', {
+        title : {
+              text : 'Absolute Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 10,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : absolute_poverty_by_state,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.code}'
+              },
+              mapData: ng_all,
+              name: 'NG',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+      });
+
+      $('#relative-state').highcharts('Map', {
+        title : {
+              text : 'Relative Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 10,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : relative_poverty_by_state,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.code}'
+              },
+              mapData: ng_all,
+              name: 'NG',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+      });
+
+      $('#dollar-state').highcharts('Map', {
+        title : {
+              text : 'Dollar Per Day Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 10,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : dollar_poverty_by_state,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.code}'
+              },
+              mapData: ng_all,
+              name: 'NG',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+      });
+
+      // Instanciate the map
+      $('#food-region').highcharts('Map', {
+          chart : {
+              events: {
+                  drilldown: function (e) {
+
+                      if (!e.seriesOptions) {
+                          var chart = this;
+                          data = '';
+                          switch(e.point.code) {
+                              case 'NW':
+                                data = ng_nw;
+                                break;
+                              case 'NE':
+                                data = ng_ne;
+                                break;
+                              case 'NC':
+                                data = ng_nc;
+                                break;
+                              case 'SW':
+                                data = ng_sw;
+                                break;
+                              case 'SE':
+                                data = ng_se;
+                                break;
+                              case 'SS':
+                                data = ng_ss;
+                                break;
+                          }
+
+                          chart.addSeriesAsDrilldown(e.point, {
+                              name: e.point.name,
+                              joinBy: ['name', 'name'],
+                              data: food_poverty_by_state,
+                              mapData: data,
+                              dataLabels: {
+                                  enabled: true,
+                                  format: '{point.code}'
+                              },
+                              tooltip: {
+                                  pointFormat: '{point.name}: {point.value}%'
+                              }
+                          });
+                      }
+                      this.setTitle(null, { text: e.point.name });
+                  },
+                  drillup: function () {
+                      this.setTitle(null, { text: 'NG' });
+                  }
+              }
+          },
+      
+          title : {
+              text : 'Food Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 10,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : food_poverty_by_region,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.name}'
+              },
+              mapData: ng_re,
+              name: 'NG',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+          
+          drilldown: {
+              //series: drilldownSeries,
+              activeDataLabelStyle: {
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  textShadow: '0 0 3px #000000'
+              },
+              drillUpButton: {
+                  relativeTo: 'spacingBox',
+                  position: {
+                      x: 0,
+                      y: 60
+                  }
+              }
+          }
+          
+      });
+
+      // Instanciate the map
+      $('#absolute-region').highcharts('Map', {
+          chart : {
+              events: {
+                  drilldown: function (e) {
+
+                      if (!e.seriesOptions) {
+                          var chart = this;
+                          data = '';
+                          switch(e.point.code) {
+                              case 'NW':
+                                data = ng_nw;
+                                break;
+                              case 'NE':
+                                data = ng_ne;
+                                break;
+                              case 'NC':
+                                data = ng_nc;
+                                break;
+                              case 'SW':
+                                data = ng_sw;
+                                break;
+                              case 'SE':
+                                data = ng_se;
+                                break;
+                              case 'SS':
+                                data = ng_ss;
+                                break;
+                          }
+
+                          chart.addSeriesAsDrilldown(e.point, {
+                              name: e.point.name,
+                              joinBy: ['name', 'name'],
+                              data: absolute_poverty_by_state,
+                              mapData: data,
+                              dataLabels: {
+                                  enabled: true,
+                                  format: '{point.code}'
+                              },
+                              tooltip: {
+                                  pointFormat: '{point.name}: {point.value}%'
+                              }
+                          });
+                      }
+                      this.setTitle(null, { text: e.point.name });
+                  },
+                  drillup: function () {
+                      this.setTitle(null, { text: 'NG' });
+                  }
+              }
+          },
+      
+          title : {
+              text : 'Absolute Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 30,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : absolute_poverty_by_region,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.name}'
+              },
+              mapData: ng_re,
+              name: 'Percentage of Absolute Poverty',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+          
+          drilldown: {
+              //series: drilldownSeries,
+              activeDataLabelStyle: {
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  textShadow: '0 0 3px #000000'
+              },
+              drillUpButton: {
+                  relativeTo: 'spacingBox',
+                  position: {
+                      x: 0,
+                      y: 60
+                  }
+              }
+          }
+          
+      });
+
+      // Instanciate the map
+      $('#relative-region').highcharts('Map', {
+      
+          chart : {
+              events: {
+                  drilldown: function (e) {
+
+                      if (!e.seriesOptions) {
+                          var chart = this;
+                          data = '';
+                          switch(e.point.code) {
+                              case 'NW':
+                                data = ng_nw;
+                                break;
+                              case 'NE':
+                                data = ng_ne;
+                                break;
+                              case 'NC':
+                                data = ng_nc;
+                                break;
+                              case 'SW':
+                                data = ng_sw;
+                                break;
+                              case 'SE':
+                                data = ng_se;
+                                break;
+                              case 'SS':
+                                data = ng_ss;
+                                break;
+                          }
+
+                          chart.addSeriesAsDrilldown(e.point, {
+                              name: e.point.name,
+                              joinBy: ['name', 'name'],
+                              data: relative_poverty_by_state,
+                              mapData: data,
+                              dataLabels: {
+                                  enabled: true,
+                                  format: '{point.code}'
+                              },
+                              tooltip: {
+                                  pointFormat: '{point.name}: {point.value}%'
+                              }
+                          });
+                      }
+                      this.setTitle(null, { text: e.point.name });
+                  },
+                  drillup: function () {
+                      this.setTitle(null, { text: 'NG' });
+                  }
+              }
+          },
+
+          title : {
+              text : 'Relative Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 40,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : relative_poverty_by_region,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.name}'
+              },
+              mapData: ng_re,
+              name: 'Percentage of Relative Poverty',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+          
+          drilldown: {
+              //series: drilldownSeries,
+              activeDataLabelStyle: {
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  textShadow: '0 0 3px #000000'
+              },
+              drillUpButton: {
+                  relativeTo: 'spacingBox',
+                  position: {
+                      x: 0,
+                      y: 60
+                  }
+              }
+          }
+          
+      });
+
+      // Instanciate the map
+      $('#dollar-region').highcharts('Map', {
+          chart : {
+              events: {
+                  drilldown: function (e) {
+
+                      if (!e.seriesOptions) {
+                          var chart = this;
+                          data = '';
+                          switch(e.point.code) {
+                              case 'NW':
+                                data = ng_nw;
+                                break;
+                              case 'NE':
+                                data = ng_ne;
+                                break;
+                              case 'NC':
+                                data = ng_nc;
+                                break;
+                              case 'SW':
+                                data = ng_sw;
+                                break;
+                              case 'SE':
+                                data = ng_se;
+                                break;
+                              case 'SS':
+                                data = ng_ss;
+                                break;
+                          }
+
+                          chart.addSeriesAsDrilldown(e.point, {
+                              name: e.point.name,
+                              joinBy: ['name', 'name'],
+                              data: dollar_poverty_by_state,
+                              mapData: data,
+                              dataLabels: {
+                                  enabled: true,
+                                  format: '{point.code}'
+                              },
+                              tooltip: {
+                                  pointFormat: '{point.name}: {point.value}%'
+                              }
+                          });
+                      }
+                      this.setTitle(null, { text: e.point.name });
+                  },
+                  drillup: function () {
+                      this.setTitle(null, { text: 'NG' });
+                  }
+              }
+          },
+          
+          title : {
+              text : 'Dollar Per Day Poverty (%)'
+          },
+
+          subtitle: {
+              text: 'NG',
+              floating: true,
+              align: 'right',
+              y: 50,
+              style: {
+                  fontSize: '16px'
+              }
+          },          
+          
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle'
+          },
+
+          mapNavigation: {
+              enabled: true,
+              buttonOptions: {
+                  verticalAlign: 'bottom'
+              }
+          },
+
+          colorAxis: {
+              min: 30,
+              // type: 'logarithmic',
+              minColor: '#E6E7E8',
+              maxColor: '#005645',
+          },
+
+          plotOptions: {
+              map: {
+                  states: {
+                      hover: {
+                          color: '#EEDD66'
+                      }
+                  }
+              }
+          },
+
+          series : [{
+              animation: {
+                  duration: 1000
+              },
+              type: "map",
+              joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
+              data : dollar_poverty_by_region,
+              dataLabels: {
+                  enabled: true,
+                  color: '#FFFFFF',
+                  format: '{point.name}'
+              },
+              mapData: ng_re,
+              name: 'Percentage of Dollar Poverty',
+              tooltip: {
+                  pointFormat: '{point.name}: {point.value}%'
+              }
+          }],
+          
+          drilldown: {
+              //series: drilldownSeries,
+              activeDataLabelStyle: {
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  textShadow: '0 0 3px #000000'
+              },
+              drillUpButton: {
+                  relativeTo: 'spacingBox',
+                  position: {
+                      x: 0,
+                      y: 60
+                  }
+              }
+          }
+          
+      });
+  });
