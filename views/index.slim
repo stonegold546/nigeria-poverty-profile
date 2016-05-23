@@ -1,3 +1,9 @@
+div class='row'
+  div class='col-md-2'
+  div class='col-md-8'
+    div id='relative-group'
+  div class='col-md-2'
+
 div class='row' style='height:550px'
   div class='col-md-2'
   div class='col-md-8'
@@ -150,7 +156,10 @@ javascript:
       ng_nw = JSON.parse("#{ng_nw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
       ng_ne = JSON.parse("#{ng_ne}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
       ng_nc = JSON.parse("#{ng_nc}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_all = JSON.parse("#{ng_all}".replace(/&quot;/g, '"').replace(/amp;/g, ''));
+      ng_all = JSON.parse("#{ng_all}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      group_keys = JSON.parse("#{group_keys}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+      group_values = JSON.parse("#{group_values}".replace(/&quot;/g, '"').replace(/amp;/g, ''));
+
 
 script src='/food.js'
 script src='/food_drill.js'
@@ -160,3 +169,4 @@ script src='/relative.js'
 script src='/relative_drill.js'
 script src='/dollar.js'
 script src='/dollar_drill.js'
+script src='group_lines.js'

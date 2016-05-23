@@ -107,6 +107,23 @@ class NigeriaPovertyProfile < Sinatra::Base
     end
   end.flatten
 
+  group_keys = relative_poverty_over_time_groups.map { |k, _| k }.to_json
+
+  relative_poverty_over_time_groups =
+  relative_poverty_over_time_groups.map do |_, data|
+    data.map do |key, value|
+      key = key == 'non_poor' ? key.tr('_', '-') : key.tr('_', ' ')
+      [key.capitalize, value]
+    end
+  end
+
+  group_values =
+  relative_poverty_over_time_groups.transpose.map do |values|
+    {
+      name: values.map { |e| e[0] }[0], data: values.map { |e| e[1] }
+    }
+  end.to_json
+
   get '/' do
     slim :index, locals: {
       food_poverty_by_region: food_poverty_by_region,
@@ -118,7 +135,8 @@ class NigeriaPovertyProfile < Sinatra::Base
       relative_poverty_by_state: relative_poverty_by_state,
       dollar_poverty_by_state: dollar_poverty_by_state,
       ng_re: ng_re, ng_nc: ng_nc, ng_ne: ng_ne, ng_nw: ng_nw,
-      ng_ss: ng_ss, ng_sw: ng_sw, ng_se: ng_se, ng_all: ng_all
+      ng_ss: ng_ss, ng_sw: ng_sw, ng_se: ng_se, ng_all: ng_all,
+      group_keys: group_keys, group_values: group_values
     }
   end
 end
