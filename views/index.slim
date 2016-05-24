@@ -5,7 +5,7 @@ div class='row'
   div class='col-md-10'
     div id='relative-group'
       == area_chart relative_chartkick, stacked: true, max: 100, colors: ['#ba3c3d', '#f8a13f', '#90ed7d'],
-        library: { hAxis: { title: 'Years', values: JSON.parse(group_keys) }, vAxis: { title: 'Percent of populaion (%)' }, title: 'Relative Poverty - Trends over time' }
+        library: { hAxis: { title: 'Years' }, vAxis: { title: 'Percent of populaion (%)' }, title: 'Relative Poverty - Trends over time' }
   div class='col-md-1'
 
 div class='row'
@@ -147,8 +147,6 @@ javascript:
 
 script src='state_by_state.js'
 script src='drilldown.js'
-
-/ script src='group_lines.js'
 
 javascript:
     stateByState('food-state', 'Food Poverty (%)', food_poverty_by_state);
