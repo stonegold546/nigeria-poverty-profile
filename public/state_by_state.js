@@ -1,11 +1,11 @@
 /*jslint browser: true*/
-/*global $, ng_all, dollar_poverty_by_state*/
+/*global $, ng_all*/
 
-$(function () {
+function stateByState(id, title, source) {
     "use strict";
-    $('#dollar-state').highcharts('Map', {
+    $('#' + id).highcharts('Map', {
         title : {
-            text : 'Dollar Per Day Poverty (%)'
+            text : title
         },
 
         subtitle: {
@@ -32,7 +32,7 @@ $(function () {
         },
 
         colorAxis: {
-            min: 30,
+            min: 10,
             // type: 'logarithmic',
             minColor: '#E6E7E8',
             maxColor: '#005645'
@@ -54,7 +54,7 @@ $(function () {
             },
             type: "map",
             joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
-            data : dollar_poverty_by_state,
+            data : source,
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
@@ -67,4 +67,4 @@ $(function () {
             }
         }]
     });
-});
+}

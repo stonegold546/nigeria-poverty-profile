@@ -6,6 +6,7 @@ require 'json'
 require 'csv'
 require 'tilt/kramdown'
 require 'ap'
+require 'chartkick'
 
 # The Nigerian Poverty Profile visualizer
 class NigeriaPovertyProfile < Sinatra::Base
@@ -124,6 +125,15 @@ class NigeriaPovertyProfile < Sinatra::Base
     }
   end.to_json
 
+  temp_keys = JSON.parse(group_keys)
+  relative_chartkick =
+  JSON.parse(group_values).reverse.map do |name_data|
+    data = temp_keys.zip(name_data['data']).to_h
+    { 'name' => name_data['name'], 'data' => data }
+  end
+
+  ap relative_chartkick
+
   get '/' do
     slim :index, locals: {
       food_poverty_by_region: food_poverty_by_region,
@@ -136,7 +146,8 @@ class NigeriaPovertyProfile < Sinatra::Base
       dollar_poverty_by_state: dollar_poverty_by_state,
       ng_re: ng_re, ng_nc: ng_nc, ng_ne: ng_ne, ng_nw: ng_nw,
       ng_ss: ng_ss, ng_sw: ng_sw, ng_se: ng_se, ng_all: ng_all,
-      group_keys: group_keys, group_values: group_values
+      group_keys: group_keys, group_values: group_values,
+      relative_chartkick: relative_chartkick
     }
   end
 end

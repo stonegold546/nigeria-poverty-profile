@@ -1,7 +1,7 @@
 /*jslint browser: true*/
-/*global $, ng_re, ng_nw, ng_ne, ng_nc, ng_sw, ng_se, ng_ss, relative_poverty_by_state, relative_poverty_by_region*/
+/*global $, ng_re, ng_nw, ng_ne, ng_nc, ng_sw, ng_se, ng_ss*/
 
-$(function () {
+function nppDrilldown(id, title, source_state, source_region) {
     "use strict";
     // Set drilldown pointers
     $.each(ng_re, function () {
@@ -9,7 +9,7 @@ $(function () {
     });
 
     // Instanciate the map
-    $('#relative-region').highcharts('Map', {
+    $('#' + id).highcharts('Map', {
         chart : {
             events: {
                 drilldown: function (e) {
@@ -41,7 +41,7 @@ $(function () {
                         chart.addSeriesAsDrilldown(e.point, {
                             name: e.point.name,
                             joinBy: ['name', 'name'],
-                            data: relative_poverty_by_state,
+                            data: source_state,
                             mapData: data,
                             dataLabels: {
                                 enabled: true,
@@ -61,7 +61,7 @@ $(function () {
         },
 
         title : {
-            text : 'Relative Poverty (%)'
+            text : title
         },
 
         subtitle: {
@@ -88,7 +88,7 @@ $(function () {
         },
 
         colorAxis: {
-            min: 40,
+            min: 10,
             // type: 'logarithmic',
             minColor: '#E6E7E8',
             maxColor: '#005645'
@@ -110,7 +110,7 @@ $(function () {
             },
             type: "map",
             joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
-            data : relative_poverty_by_region,
+            data : source_region,
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
@@ -139,4 +139,4 @@ $(function () {
         }
 
     });
-});
+}

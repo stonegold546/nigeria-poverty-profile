@@ -1,72 +1,17 @@
+/ colors: ['#434348', '#f7a35c', '#90ed7d'],
+
 div class='row'
-  div class='col-md-2'
-  div class='col-md-8'
+  div class='col-md-1'
+  div class='col-md-10'
     div id='relative-group'
-  div class='col-md-2'
-
-div class='row' style='height:550px'
-  div class='col-md-2'
-  div class='col-md-8'
-    ul class='nav nav-tabs'
-      li class='active'
-        a data-toggle='tab' href='#food-state' State-by-state
-      li
-        a data-toggle='tab' href='#food-region' Geopolitical zones with state-by-state drilldowns
-
-      div class='tab-content'
-        div id='food-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
-        div id='food-region' class='tab-pane fade'
-  div class='col-md-2'
-
-div class='row' style='height:550px'
-  div class='col-md-2'
-  div class='col-md-8'
-    ul class='nav nav-tabs'
-      li class='active'
-        a data-toggle='tab' href='#absolute-state' State-by-state
-      li
-        a data-toggle='tab' href='#absolute-region' Geopolitical zones with state-by-state drilldowns
-
-      div class='tab-content'
-        div id='absolute-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
-        div id="absolute-region" class='tab-pane fade'
-
-  div class='col-md-2'
-  
-div class='row' style='height:550px'
-  div class='col-md-2'
-  div class='col-md-8'
-    ul class='nav nav-tabs'
-      li class='active'
-        a data-toggle='tab' href='#relative-state' State-by-state
-      li
-        a data-toggle='tab' href='#relative-region' Geopolitical zones with state-by-state drilldowns
-
-      div class='tab-content'
-        div id='relative-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
-        div id="relative-region" class='tab-pane fade'
-  
-  div class='col-md-2'
-
-div class='row' style='height:550px'
-  div class='col-md-2'
-  div class='col-md-8'
-    ul class='nav nav-tabs'
-      li class='active'
-        a data-toggle='tab' href='#dollar-state' State-by-state
-      li
-        a data-toggle='tab' href='#dollar-region' Geopolitical zones with state-by-state drilldowns
-
-      div class='tab-content'
-        div id='dollar-state' class='tab-pane fade in active' style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"
-        div id="dollar-region" class='tab-pane fade'
-
-  div class='col-md-2'
+      == area_chart relative_chartkick, stacked: true, max: 100, colors: ['#ba3c3d', '#f8a13f', '#90ed7d'],
+        library: { hAxis: { title: 'Years', values: JSON.parse(group_keys) }, vAxis: { title: 'Percent of populaion (%)' }, title: 'Relative Poverty - Trends over time' }
+  div class='col-md-1'
 
 div class='row'
   div class='col-md-2'
   div class='col-md-8'
-    h3 Definitions of Poverty from the NBS Report
+    h3 Dimensions of Poverty from the NBS Report
   div class='col-md-2'
 
 div class='col-md-2'
@@ -79,6 +24,16 @@ div class='col-md-8'
             | Food Poverty
       div id="food" class="panel-collapse collapse in"
         div class="panel-body"
+          ul class='nav nav-tabs'
+            li class='active'
+              a data-toggle='tab' href='#food-state' State-by-state
+            li
+              a data-toggle='tab' href='#food-region' Geopolitical zones with state-by-state drilldowns
+
+            div class='tab-content'
+              div id='food-state' class='tab-pane fade in active'
+              div id='food-region' class='tab-pane fade'
+
           p This method is otherwise known as Food
             Energy Intake measure of poverty. First you obtain the food basket of the poorest
             40 percent of the population (using quintiles). Then compute the food
@@ -94,6 +49,16 @@ div class='col-md-8'
             | Absolute Poverty
       div id="absolute" class="panel-collapse collapse"
         div class="panel-body"
+          ul class='nav nav-tabs'
+            li class='active'
+              a data-toggle='tab' href='#absolute-state' State-by-state
+            li
+              a data-toggle='tab' href='#absolute-region' Geopolitical zones with state-by-state drilldowns
+
+            div class='tab-content'
+              div id='absolute-state' class='tab-pane fade in active'
+              div id="absolute-region" class='tab-pane fade'
+
           p The addition of non-food component (to Food Poverty) using
             average non-food expenditure of plus or minus 100 Households around the Core
             poverty line will give the objective (absolute) poverty measure. The total
@@ -108,6 +73,16 @@ div class='col-md-8'
             | Relative Poverty
       div id="relative" class="panel-collapse collapse"
         div class="panel-body"
+          ul class='nav nav-tabs'
+            li class='active'
+              a data-toggle='tab' href='#relative-state' State-by-state
+            li
+              a data-toggle='tab' href='#relative-region' Geopolitical zones with state-by-state drilldowns
+
+            div class='tab-content'
+              div id='relative-state' class='tab-pane fade in active'
+              div id="relative-region" class='tab-pane fade'
+
           p An analytical attempt was made in summing the expenditure
             of the household. This household expenditure was deflated using the Consumer
             Price Index (CPI). The objective of deflating the figures obtained was to correct for
@@ -127,6 +102,16 @@ div class='col-md-8'
             | Dollar Per Day Poverty
       div id="dollar" class="panel-collapse collapse"
         div class="panel-body"
+          ul class='nav nav-tabs'
+            li class='active'
+              a data-toggle='tab' href='#dollar-state' State-by-state
+            li
+              a data-toggle='tab' href='#dollar-region' Geopolitical zones with state-by-state drilldowns
+
+            div class='tab-content'
+              div id='dollar-state' class='tab-pane fade in active'
+              div id="dollar-region" class='tab-pane fade'
+
           p The application of dollar per day in the computation of poverty
             measure was achieved by adopting the World Bank 2002 of Purchasing Power
             Parity (PPP) which placed on US$1 to be equivalent to N46.2. When this figure
@@ -141,32 +126,36 @@ div class='col-md-2'
 div class='row'
 
 javascript:
-  var food_poverty_by_region = JSON.parse("#{food_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      food_poverty_by_state = JSON.parse("#{food_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      absolute_poverty_by_region = JSON.parse("#{absolute_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      absolute_poverty_by_state = JSON.parse("#{absolute_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      relative_poverty_by_region = JSON.parse("#{relative_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      relative_poverty_by_state = JSON.parse("#{relative_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      dollar_poverty_by_region = JSON.parse("#{dollar_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      dollar_poverty_by_state = JSON.parse("#{dollar_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_re = JSON.parse("#{ng_re}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_se = JSON.parse("#{ng_se}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_ss = JSON.parse("#{ng_ss}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_sw = JSON.parse("#{ng_sw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_nw = JSON.parse("#{ng_nw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_ne = JSON.parse("#{ng_ne}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_nc = JSON.parse("#{ng_nc}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      ng_all = JSON.parse("#{ng_all}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      group_keys = JSON.parse("#{group_keys}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
-      group_values = JSON.parse("#{group_values}".replace(/&quot;/g, '"').replace(/amp;/g, ''));
+    var food_poverty_by_region = JSON.parse("#{food_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        food_poverty_by_state = JSON.parse("#{food_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        absolute_poverty_by_region = JSON.parse("#{absolute_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        absolute_poverty_by_state = JSON.parse("#{absolute_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        relative_poverty_by_region = JSON.parse("#{relative_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        relative_poverty_by_state = JSON.parse("#{relative_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        dollar_poverty_by_region = JSON.parse("#{dollar_poverty_by_region}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        dollar_poverty_by_state = JSON.parse("#{dollar_poverty_by_state}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_re = JSON.parse("#{ng_re}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_se = JSON.parse("#{ng_se}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_ss = JSON.parse("#{ng_ss}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_sw = JSON.parse("#{ng_sw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_nw = JSON.parse("#{ng_nw}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_ne = JSON.parse("#{ng_ne}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_nc = JSON.parse("#{ng_nc}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        ng_all = JSON.parse("#{ng_all}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        group_keys = JSON.parse("#{group_keys}".replace(/&quot;/g, '"').replace(/amp;/g, '')),
+        group_values = JSON.parse("#{group_values}".replace(/&quot;/g, '"').replace(/amp;/g, ''));
 
+script src='state_by_state.js'
+script src='drilldown.js'
 
-script src='/food.js'
-script src='/food_drill.js'
-script src='/absolute.js'
-script src='/absolute_drill.js'
-script src='/relative.js'
-script src='/relative_drill.js'
-script src='/dollar.js'
-script src='/dollar_drill.js'
-script src='group_lines.js'
+/ script src='group_lines.js'
+
+javascript:
+    stateByState('food-state', 'Food Poverty (%)', food_poverty_by_state);
+    stateByState('absolute-state', 'Absolute Poverty (%)', absolute_poverty_by_state);
+    stateByState('relative-state', 'Relative Poverty (%)', relative_poverty_by_state);
+    stateByState('dollar-state', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state);
+    nppDrilldown('food-region', 'Food Poverty (%)', food_poverty_by_state, food_poverty_by_region);
+    nppDrilldown('absolute-region', 'Absolute Poverty (%)', absolute_poverty_by_state, absolute_poverty_by_region);
+    nppDrilldown('relative-region', 'Relative Poverty (%)', relative_poverty_by_state, relative_poverty_by_region);
+    nppDrilldown('dollar-region', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state, dollar_poverty_by_region);

@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.6.1)
+    chartkick (1.4.1)
     kramdown (1.11.1)
     puma (3.4.0)
     rack (1.6.4)
@@ -23,6 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  chartkick
   kramdown
   puma
   rack-ssl-enforcer
