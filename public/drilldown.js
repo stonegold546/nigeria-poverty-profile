@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, ng_re, ng_nw, ng_ne, ng_nc, ng_sw, ng_se, ng_ss*/
 
-function nppDrilldown(id, title, source_state, source_region) {
+function nppDrilldown(id, title, source_state, source_region, minValue) {
     "use strict";
     // Set drilldown pointers
     $.each(ng_re, function () {
@@ -88,7 +88,7 @@ function nppDrilldown(id, title, source_state, source_region) {
         },
 
         colorAxis: {
-            min: 10,
+            min: minValue,
             // type: 'logarithmic',
             minColor: '#E6E7E8',
             maxColor: '#005645'

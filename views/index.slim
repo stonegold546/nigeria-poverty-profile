@@ -149,11 +149,11 @@ script src='state_by_state.js'
 script src='drilldown.js'
 
 javascript:
-    stateByState('food-state', 'Food Poverty (%)', food_poverty_by_state);
-    stateByState('absolute-state', 'Absolute Poverty (%)', absolute_poverty_by_state);
-    stateByState('relative-state', 'Relative Poverty (%)', relative_poverty_by_state);
-    stateByState('dollar-state', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state);
-    nppDrilldown('food-region', 'Food Poverty (%)', food_poverty_by_state, food_poverty_by_region);
-    nppDrilldown('absolute-region', 'Absolute Poverty (%)', absolute_poverty_by_state, absolute_poverty_by_region);
-    nppDrilldown('relative-region', 'Relative Poverty (%)', relative_poverty_by_state, relative_poverty_by_region);
-    nppDrilldown('dollar-region', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state, dollar_poverty_by_region);
+    stateByState('food-state', 'Food Poverty (%)', food_poverty_by_state, 10);
+    stateByState('absolute-state', 'Absolute Poverty (%)', absolute_poverty_by_state, 30);
+    stateByState('relative-state', 'Relative Poverty (%)', relative_poverty_by_state, 40);
+    stateByState('dollar-state', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state, 30);
+    nppDrilldown('food-region', 'Food Poverty (%)', food_poverty_by_state, food_poverty_by_region, 10);
+    nppDrilldown('absolute-region', 'Absolute Poverty (%)', absolute_poverty_by_state, absolute_poverty_by_region, 30);
+    nppDrilldown('relative-region', 'Relative Poverty (%)', relative_poverty_by_state, relative_poverty_by_region, 40);
+    nppDrilldown('dollar-region', 'Dollar Per Day Poverty (%)', dollar_poverty_by_state, dollar_poverty_by_region, 30);

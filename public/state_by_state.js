@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, ng_all*/
 
-function stateByState(id, title, source) {
+function stateByState(id, title, source, minValue) {
     "use strict";
     $('#' + id).highcharts('Map', {
         title : {
@@ -32,7 +32,7 @@ function stateByState(id, title, source) {
         },
 
         colorAxis: {
-            min: 10,
+            min: minValue,
             // type: 'logarithmic',
             minColor: '#E6E7E8',
             maxColor: '#005645'
