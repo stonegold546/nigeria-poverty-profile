@@ -100,6 +100,17 @@ function nppDrilldown(id, title, source_state, source_region, minValue) {
                     hover: {
                         color: '#EEDD66'
                     }
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function () {
+                        if (this.key === 'South-South') {
+                            this.point.plotX -= 15;
+                            this.point.plotY += 40;
+                            return this.key;
+                        }
+                        return this.key;
+                    }
                 }
             }
         },
@@ -112,9 +123,7 @@ function nppDrilldown(id, title, source_state, source_region, minValue) {
             joinBy: ['name', 'name'], // <- mapping 'name' in data to 'name' in mapData
             data : source_region,
             dataLabels: {
-                enabled: true,
-                color: '#FFFFFF',
-                format: '{point.name}'
+                color: '#FFFFFF'
             },
             mapData: ng_re,
             name: 'NG',
