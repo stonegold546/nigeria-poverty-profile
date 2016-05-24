@@ -132,8 +132,6 @@ class NigeriaPovertyProfile < Sinatra::Base
     { 'name' => name_data['name'], 'data' => data }
   end
 
-  ap relative_chartkick
-
   get '/' do
     slim :index, locals: {
       food_poverty_by_region: food_poverty_by_region,
