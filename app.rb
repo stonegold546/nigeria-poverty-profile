@@ -148,4 +148,8 @@ class NigeriaPovertyProfile < Sinatra::Base
       relative_chartkick: relative_chartkick
     }
   end
+
+  get '/keybase.txt' do
+    File.read(File.join('public', 'keybase.txt'))
+  end
 end

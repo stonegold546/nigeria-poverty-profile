@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/jamesuanhoro
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nigeria-poverty-profile.herokuapp.com
+  * I am jamesuanhoro (https://keybase.io/jamesuanhoro) on keybase.
+  * I have a public key with fingerprint 2978 00A8 073E 1233 1FCF  3F86 1EEB DEDC 2C44 9FC3
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d0c0fc0f6abdf09f9de802054093aa0697a559b12ed796e726f0013f464831df0a",
+            "fingerprint": "297800a8073e12331fcf3f861eebdedc2c449fc3",
+            "host": "keybase.io",
+            "key_id": "1eebdedc2c449fc3",
+            "kid": "0101b3d86c2308577d4560eb56604a4ad1dca1e2843690a5a481c34efae3364507fc0a",
+            "uid": "b272ca1542d19265c65ce072b6bb6319",
+            "username": "jamesuanhoro"
+        },
+        "service": {
+            "hostname": "nigeria-poverty-profile.herokuapp.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470262784,
+    "expire_in": 157680000,
+    "prev": "01196fa840851a1c3073613501c5550d8842d9f74adcdb47ddc78e6c152158d2",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFtUmtMXEUY5S1FECSUUkrAXgSxLjD3fe+iNIGtEQg1BgEJj+U+5rKXx95lH1ig
+CKKloWBa+gikFkkpJBbQkLbpg6QPCqakUCsEShQQaFSitLUlMTGygrOk/WcyyZeZ
+OefM+c43xwI83XzdI1d/ntcZukbcx38X3XK7tdhaTNTkakxfi5XBrQLLZWizG8tU
+GdNjACeADCSgoMUIoqwAXuFlyAEC0BTgSUEADM8KNM2LOAFllmcgSzAKADipUAzF
+kTiiCJgOU1RzCbRarKrZjmQJnuUAEDjAkhAnSBJXJIVUOAaHUJShLBESRfGKRCKi
+SbO5GMicKNhggqqhM7Qxbtn7H/wL3wAXSZljJIIEHM2yMkUzAIo0wwBKoAQZlyUB
+hwRHkQwPBFqgOFwiKagIkCQZigYs6tjl27ElJxIsgfA0Rcg4TzC0hBYELCEyosiQ
+OO8C2qDVLFRAhC5FxeYQzCbNqmF1OgzdVKkSdIXr6uY5yqyiQFQh3qJVQau9Ot5i
+1RS1HCaYoFUrcwgWS4KkVSBhdG7XJK0cUUx2u8Wmd0naqy0ujY+haHyubhRVs4xC
+RgykZ1M1M6bHEVKyq67ncIoFBEOwHKXD4AGLaoVGh+qC0CyDRgGA6yFYtRUdzjOK
+wFEoN1xAqaAhMThJA1yiaRrIHIdS4BUWhSjJIsXKssRykJFwmsBpTiYwV8OVZg3T
+88inUIIkbWqJWbA7rBCr82v2iPByc/d18/H2cH0/N79tQS/+ZGda4EYSfRGqKQfn
+zgYbcgx5D7S240zlwBBIbO4LCcxo2sefH5VNdd0LF51NdzsftH8bMxHW9d3wvF9j
+VG9B3GJhOx41WBI1k2sa6/E6wTGP9rz3+Vie/itjTfpyi6fzx8wnHXtuZp4c3b+w
+V3ns/0HNp/M7vk4vt7y8t3Oqa/jm3Qv+fSnvzkTc8l9Vulv+TIx823mlMLL4r5xN
+2PwwL+pMckMbU9txJmO/GQ9NG/Qq/qNokfA4Fhzy1qPwfJ8jE3nRQ+UdRRUVOVP5
+Oy9ltExO1Q/ETrZdWb42bCjAnYeXJ1qPfn/7jn/cetH9zDT9yfpVOJvTuvOdwJE7
+B4N2hGxsf9Zxq2LU+0DILyu5toc/RDHp3bP7+uPWXvJpbA3b1Zfw266coMXm3R71
+prRJYrx26vUnYYkNUuChoqzppcKyG0DRgpNTu81XQz9J0Qf3Tzp712JA6GuvZLUE
+RFw+/+HZmOzN/HPbThVHhJ/6d2Et4X7ngu4jqScg8MvB0tJrhW1lK8O3m6I7Kj8z
+1GCXkkd8wdXjmz81phxasjqXdeEFsw7D+HY2NfzCynrSq8tPRxu8befuGb/JTprn
+Hqe3naB9np6+d30pTHqjQIldH/zHZKaDpi9n9M6kuh999sVcVXTedduN5Y3dYnv/
+UHxM8vRAD539a1KBJ1+3mDz1t+3NrorK0ws1c2NZ7x/+Dw==
+=Rtrb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jamesuanhoro
+
+==================================================================
