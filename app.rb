@@ -10,6 +10,8 @@ require 'chartkick'
 
 # The Nigerian Poverty Profile visualizer
 class NigeriaPovertyProfile < Sinatra::Base
+  POPN = 'estimated_population'
+
   ng_re = File.open('./data/maps/ng-re.json')
   ng_re = JSON.load ng_re
   ng_re = ng_re.to_json
@@ -121,16 +123,12 @@ class NigeriaPovertyProfile < Sinatra::Base
   group_values =
   relative_poverty_over_time_groups.transpose.map do |values|
     {
-      name: values.map { |e| e[0] }[0], data: values.map { |e| e[1] }
+      name: values.map { |e| e[0] }[0],
+      data: values.each_with_index.map do |e, idx|
+        e[1] * relative_poverty_over_time_incidence.values[idx][POPN] / 100
+      end
     }
   end.to_json
-
-  temp_keys = JSON.parse(group_keys)
-  relative_chartkick =
-  JSON.parse(group_values).reverse.map do |name_data|
-    data = temp_keys.zip(name_data['data']).to_h
-    { 'name' => name_data['name'], 'data' => data }
-  end
 
   get '/' do
     slim :index, locals: {
@@ -144,8 +142,7 @@ class NigeriaPovertyProfile < Sinatra::Base
       dollar_poverty_by_state: dollar_poverty_by_state,
       ng_re: ng_re, ng_nc: ng_nc, ng_ne: ng_ne, ng_nw: ng_nw,
       ng_ss: ng_ss, ng_sw: ng_sw, ng_se: ng_se, ng_all: ng_all,
-      group_keys: group_keys, group_values: group_values,
-      relative_chartkick: relative_chartkick
+      group_keys: group_keys, group_values: group_values
     }
   end
 

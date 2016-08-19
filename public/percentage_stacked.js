@@ -5,7 +5,7 @@ $(function () {
     "use strict";
     $('#relative-group').highcharts({
         chart: {
-            type: 'line'
+            type: 'area'
         },
         title: {
             text: 'Relative Poverty - Trends over time'
@@ -14,21 +14,28 @@ $(function () {
             text: 'Source: NBS Report'
         },
         xAxis: {
-            categories: group_keys
+            categories: group_keys,
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
         },
         yAxis: {
             title: {
                 text: 'Percent of population (%)'
             }
         },
+        tooltip: {
+            pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.1f} million)<br/>',
+            shared: true
+        },
         plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
+            area: {
+                stacking: 'percent',
                 enableMouseTracking: true
             }
         },
+        colors: ['#90ed7d', '#f8a13f', '#ba3c3d'],
         series: group_values
     });
 });
